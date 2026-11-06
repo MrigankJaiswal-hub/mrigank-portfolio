@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - mkdir -p dist
+        - cp index.html styles.css script.js arcade.js dist/
+        - cp -R assets dist/
+        - for portrait in portrait-*.webp; do if [ -f "$portrait" ]; then cp "$portrait" dist/; fi; done
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'

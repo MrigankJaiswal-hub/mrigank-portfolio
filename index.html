@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mrigank Jaiswal's engineering portfolio. Explore wireless, embedded telemetry, and cloud projects and try an interactive antenna experiment.">
+<meta name="theme-color" content="#141310">
+<title>Mrigank Jaiswal · Engineering Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<script src="arcade.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="wrap top">
+<a class="brand" href="#main"><img src="assets/portrait-real.webp" alt="" width="38" height="38"> <span>Mrigank Jaiswal</span></a>
+<nav aria-label="Main navigation"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#games">Mini-games</a><a href="#lab">Beam Lab</a><a href="#credentials">Credentials</a><a href="#writing">Writing</a><a href="#contact">Contact</a></nav>
+</header>
+<main id="main">
+<section class="wrap hero" aria-labelledby="hero-title">
+<p class="eyebrow">PORTFOLIO / ELECTRONICS &amp; COMMUNICATION</p>
+<div class="hero-heading">
+<h1 id="hero-title">Mrigank<br>Jaiswal<span>.</span></h1>
+<div class="tech-field" aria-hidden="true">
+<svg viewBox="0 0 480 285">
+<defs><pattern id="tech-grid" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#dcc0ee" opacity=".24"/></pattern></defs>
+<rect width="480" height="285" fill="url(#tech-grid)"/>
+<g class="tech-orbits" fill="none" stroke="#c3a7ff" stroke-width="1.2">
+<ellipse cx="243" cy="140" rx="120" ry="50"/><ellipse cx="243" cy="140" rx="120" ry="50" transform="rotate(60 243 140)"/><ellipse cx="243" cy="140" rx="120" ry="50" transform="rotate(120 243 140)"/>
+</g>
+<circle class="tech-core" cx="243" cy="140" r="21" fill="#ecb5ff" opacity=".7"/><circle cx="243" cy="140" r="8" fill="#fff0fa"/>
+<g class="tech-wave" fill="none" stroke="#ffb984" stroke-width="2"><path d="M42 216q19-42 38 0t38 0t38 0"/><path d="M383 86q19-20 38 0m-29 8q10-10 20 0m-13 8q4-4 7 0"/></g>
+<g class="tech-symbols" font-size="17" font-family="monospace">
+<text x="49" y="63" fill="#ecc6ff">|0⟩ + |1⟩</text><text x="340" y="47" fill="#9de8dd">101101</text>
+<text x="342" y="238" fill="#eac7ff">&lt;/code&gt;</text><text x="36" y="150" fill="#9de8dd">{ API }</text>
+<text x="374" y="160" fill="#ffd0a5">5G / RF</text><text x="166" y="263" fill="#9de8dd">λ · π · FFT</text>
+</g>
+</svg>
+</div>
+</div>
+<div class="hero-composition">
+<div class="intro">
+<p class="lead">I build at the intersection of wireless, hardware, and cloud.</p>
+<p class="muted">ECE student at Central University of Jammu and AWS Student Builder Group Leader.</p>
+<div class="actions"><a class="button primary" href="#projects">Explore my work ↘</a><a class="text-link" href="#lab">Try Beam Lab ↗</a></div>
+</div>
+<button type="button" class="hero-art portrait" id="portrait" aria-label="Change the lighting around Mrigank Jaiswal’s portrait">
+<svg viewBox="0 0 660 360" xmlns="http://www.w3.org/2000/svg">
+<defs><radialGradient id="halo"><stop stop-color="#ffac64"/><stop offset="1" stop-color="#f17146" stop-opacity="0"/></radialGradient>
+<pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#24130c" stroke-opacity=".16"/></pattern></defs>
+<rect width="660" height="360" fill="#e47c50"/><rect width="660" height="360" fill="url(#halo)"/><rect width="660" height="360" fill="url(#grid)"/>
+<g class="field-rings" fill="none" stroke="#3a2016" opacity=".8" transform="rotate(-30 330 183)">
+<ellipse cx="330" cy="183" rx="38" ry="105"/><ellipse cx="330" cy="183" rx="65" ry="112"/><ellipse cx="330" cy="183" rx="92" ry="119"/><ellipse cx="330" cy="183" rx="120" ry="126"/><ellipse cx="330" cy="183" rx="150" ry="133"/><ellipse cx="330" cy="183" rx="182" ry="140"/><ellipse cx="330" cy="183" rx="217" ry="147"/><ellipse cx="330" cy="183" rx="253" ry="154"/>
+</g><circle cx="330" cy="183" r="8" fill="#2c1a16"/><circle class="field-pulse" cx="330" cy="183" r="23" fill="none" stroke="#2c1a16"/>
+</svg>
+<span class="portrait-initials" aria-hidden="true">MJ</span>
+<img class="portrait-photo portrait-photo--real" src="assets/portrait-real.webp" alt="Mrigank Jaiswal" width="200" height="188">
+<span class="portrait-caption">TAP FOR A COLOR BURST <b aria-hidden="true">↗</b></span>
+</button>
+<a class="hero-note" href="#lab"><span>INTERACTIVE / 01</span><strong>What happens when you steer a radio wave?</strong><span>Try it yourself ↗</span></a>
+</div>
+</section>
+<section class="wrap section about" id="about" aria-labelledby="about-title">
+<div><p class="eyebrow">01 / ABOUT ME</p><h2 id="about-title">From radio waves<br>to working prototypes.</h2></div>
+<div><p>I’m an Electronics and Communication Engineering student at Central University of Jammu. I’m drawn to problems that cross layers, from modeling how a 5G signal moves through campus to deciding what a device should do when its connection drops.</p><p>At IIIT Bangalore, my research internship has taken me into wireless communication and Open RAN. At CU Jammu, I lead the AWS Student Builder Group and help students get hands-on with cloud tools.</p></div>
+</section>
+<section class="wrap section" id="experience" aria-labelledby="experience-title">
+<p class="eyebrow">02 / EXPERIENCE &amp; AFFILIATIONS</p>
+<h2 id="experience-title">Research, campus, and startup work.</h2>
+<section class="portfolio-group"><h3 class="group-heading">Startup leadership</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="brand-plate blend"><img class="brand-mark" src="assets/aerocorridor-ai.webp" alt="" loading="lazy"></span><p class="project-index">STARTUP / PROOF OF CONCEPT</p><h3>Director</h3><p>AeroCorridor AI</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Director" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">STARTUP / PROOF OF CONCEPT</p><h3>Director</h3><p>Developing network-assisted coordination for multiple drones. The concept combines cooperative RF sensing, edge intelligence, and routing for degraded GNSS and connectivity.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Director" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="brand-plate "><img class="brand-mark" src="assets/supplymesh-ai.webp" alt="" loading="lazy"></span><p class="project-index">JAN 2026 – PRESENT</p><h3>Director</h3><p>SupplyMesh AI</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Director" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JAN 2026 – PRESENT</p><h3>Director</h3><p>Building shipment monitoring and traceability products, including ColdGuard for temperature-sensitive logistics.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Director" hidden>↶ Back to overview</button></div></div>
+</article></div></section><section class="portfolio-group"><h3 class="group-heading">Research and professional experience</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">IIITB</span><p class="project-index">JUN 2026 – PRESENT · ON-SITE</p><h3>Research Intern</h3><p>IIIT Bangalore · COMET Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Research Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2026 – PRESENT · ON-SITE</p><h3>Research Intern</h3><p>Worked on wireless communications and Open RAN, including QoS-aware scheduling with OpenAirInterface. Bengaluru, India.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Research Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">MMMUT</span><p class="project-index">JUN–JUL 2026 · HYBRID</p><h3>Research Intern</h3><p>MMMUT, Gorakhpur</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Research Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN–JUL 2026 · HYBRID</p><h3>Research Intern</h3><p>Built a PyTorch pipeline for 7,200 brain MRI images across four classes. Implemented SimCLR with ResNet50 and NT-Xent. The YOLOv8n-cls baseline reached 91.81% top-1 validation accuracy.</p><p><a href="https://github.com/MrigankJaiswal-hub/brain-mri-simclr-yolov8">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Research Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">SLU</span><p class="project-index">JUL–AUG 2026</p><h3>Project Management Intern</h3><p>Saint Louis University</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Project Management Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUL–AUG 2026</p><h3>Project Management Intern</h3><p>Saint Louis University</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Project Management Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">SLU</span><p class="project-index">JUL–AUG 2026 · REMOTE</p><h3>Data Visualization Trainee</h3><p>Saint Louis University</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Data Visualization Trainee" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUL–AUG 2026 · REMOTE</p><h3>Data Visualization Trainee</h3><p>Saint Louis University</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Data Visualization Trainee" hidden>↶ Back to overview</button></div></div>
+</article></div></section><details class="archive"><summary>More experience <span>(8)</span></summary><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JAN–JUL 2026</p><h3>Delegate</h3><p>Harvard Project for Asian and International Relations</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Delegate" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JAN–JUL 2026</p><h3>Delegate</h3><p>Harvard Project for Asian and International Relations</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Delegate" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAR–JUN 2026</p><h3>Project Engineering Intern</h3><p>IEEE MTT-S/AP-S/EMC-S Joint Chapter, Hyderabad</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Project Engineering Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAR–JUN 2026</p><h3>Project Engineering Intern</h3><p>IEEE MTT-S/AP-S/EMC-S Joint Chapter, Hyderabad</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Project Engineering Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">NOV 2025 – JAN 2026</p><h3>Project Intern</h3><p>Infosys Springboard</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Project Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">NOV 2025 – JAN 2026</p><h3>Project Intern</h3><p>Infosys Springboard</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Project Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUL–SEP 2025</p><h3>Embedded System Essentials</h3><p>Quark BITS Pilani Goa</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Embedded System Essentials" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUL–SEP 2025</p><h3>Embedded System Essentials</h3><p>Quark BITS Pilani Goa</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Embedded System Essentials" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN–JUL 2025 · ON-SITE</p><h3>Research and Development Intern</h3><p>Garuda Aerospace Private Limited</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Research and Development Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN–JUL 2025 · ON-SITE</p><h3>Research and Development Intern</h3><p>Research and development internship in Chennai.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Research and Development Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">OCT–DEC 2024</p><h3>Contributor</h3><p>GirlScript Summer of Code</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Contributor" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">OCT–DEC 2024</p><h3>Contributor</h3><p>GirlScript Summer of Code</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Contributor" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUL–AUG 2024</p><h3>Business Analytics Intern</h3><p>CodersCave</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Business Analytics Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUL–AUG 2024</p><h3>Business Analytics Intern</h3><p>Worked with Power BI and business analytics.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Business Analytics Intern" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Data Science and AI/ML Intern</h3><p>YBI Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Data Science and AI/ML Intern" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Data Science and AI/ML Intern</h3><p>Internship in machine learning and Python.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Data Science and AI/ML Intern" hidden>↶ Back to overview</button></div></div>
+</article></div></details><section class="portfolio-group"><h3 class="group-heading">Community leadership</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">AWS</span><p class="project-index">NOV 2025 – PRESENT</p><h3>Student Builder Group Leader</h3><p>Amazon Web Services · CU Jammu</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Student Builder Group Leader" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">NOV 2025 – PRESENT</p><h3>Student Builder Group Leader</h3><p>Lead the campus AWS Student Builder Group and organize hands-on cloud learning events.</p><p><a href="https://www.credly.com/badges/663b813c-3406-474d-9d51-7b5c957c22b7">View AWS SBG Leader badge ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Student Builder Group Leader" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">AWS</span><p class="project-index">NOV 2025 – PRESENT</p><h3>Cloud Club Captain</h3><p>Amazon Web Services</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Cloud Club Captain" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">NOV 2025 – PRESENT</p><h3>Cloud Club Captain</h3><p>AWS Cloud Club leadership and student cloud education.</p><p><a href="https://www.credly.com/badges/5e678e4b-ab1a-496d-93e0-4bbe715b5a8c">View AWS Cloud Club Captain badge ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Cloud Club Captain" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">GFG</span><p class="project-index">DEC 2024 – DEC 2025</p><h3>Campus Lead</h3><p>GeeksforGeeks</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Campus Lead" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">DEC 2024 – DEC 2025</p><h3>Campus Lead</h3><p>Led the GeeksforGeeks student chapter at Central University of Jammu.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Campus Lead" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">EV</span><p class="project-index">FEB 2024 – FEB 2025</p><h3>Founding President</h3><p>ElectroVision · Central University of Jammu</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Founding President" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">FEB 2024 – FEB 2025</p><h3>Founding President</h3><p>Founded and led the campus AI/ML club.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Founding President" hidden>↶ Back to overview</button></div></div>
+</article></div></section><section class="portfolio-group"><h3 class="group-heading">Affiliations</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="brand-plate "><img class="brand-mark" src="assets/cu-jammu.webp" alt="" loading="lazy"></span><p class="project-index">2023–2027</p><h3>B.Tech, Electronics and Communication Engineering</h3><p>Central University of Jammu</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for B.Tech, Electronics and Communication Engineering" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">2023–2027</p><h3>B.Tech, Electronics and Communication Engineering</h3><p>Central University of Jammu</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for B.Tech, Electronics and Communication Engineering" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><span class="affiliation-tag" aria-hidden="true">IEEE AP-S</span><p class="project-index">JAN 2026 – PRESENT</p><h3>IEEE Member</h3><p>IEEE Antennas and Propagation Society</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for IEEE Member" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JAN 2026 – PRESENT</p><h3>IEEE Member</h3><p>IEEE Antennas and Propagation Society</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for IEEE Member" hidden>↶ Back to overview</button></div></div>
+</article></div></section></section>
+<section class="wrap section" id="games" aria-labelledby="games-title">
+<p class="eyebrow">INTERMISSION / PLAY LAB</p>
+<h2 id="games-title">Play the arcade.</h2>
+<div class="card-grid games-grid">
+<article class="game-card" id="chess-game">
+<p class="eyebrow">ARCADE / CHESS</p><h3>Mate in one</h3>
+<p>Play White. Select a piece, then its destination. Solve either endgame in one move.</p>
+<div class="chess-board" id="chess-board" role="group" aria-label="Chess puzzle board"></div>
+<p class="game-status" id="chess-status" role="status">Find White’s checkmate.</p>
+<div class="actions"><button class="button outline" id="chess-next" type="button">Next puzzle</button><button class="button outline" id="chess-reset" type="button">Reset position</button></div>
+</article>
+<article class="game-card" id="snake-game">
+<p class="eyebrow">ARCADE / SNAKE</p><h3>Packet Snake</h3>
+<p>Collect packets and keep your signal alive. Use arrow keys, WASD, or the on-screen controls.</p>
+<canvas id="snake-board" width="288" height="288" tabindex="0" aria-label="Snake board. Use arrow keys or WASD to steer." aria-describedby="snake-status">Snake needs canvas support.</canvas>
+<div class="snake-controls" role="group" aria-label="Steer Snake">
+<button type="button" data-direction="up" aria-label="Up">↑</button><button type="button" data-direction="left" aria-label="Left">←</button><button type="button" data-direction="down" aria-label="Down">↓</button><button type="button" data-direction="right" aria-label="Right">→</button>
+</div>
+<p class="game-status" id="snake-status" role="status">Ready to play.</p>
+<div class="actions"><button class="button outline" id="snake-start" type="button">Start game</button><button class="button outline" id="snake-pause" type="button" disabled>Pause</button><span>Score <strong id="snake-score">0</strong></span></div>
+</article>
+<article class="game-card">
+<p class="eyebrow">01 / SIGNAL LOCK</p>
+<h3>Tune in the receiver</h3>
+<p>Move the dial until the receiver locks onto the hidden signal. Follow the strength meter.</p>
+<label for="tune">Frequency <output id="frequency" for="tune">88.0 MHz</output></label>
+<input id="tune" type="range" min="880" max="1080" value="880" aria-describedby="tune-status">
+<meter id="strength" min="0" max="100" value="0" aria-label="Signal strength"></meter>
+<p id="tune-status" class="game-status" role="status">Start turning the dial.</p>
+<button class="button outline" id="new-frequency" type="button">New signal</button>
+</article>
+<article class="game-card">
+<p class="eyebrow">02 / BIT MATCH</p>
+<h3>Build the nibble</h3>
+<p>Toggle the four bits until their sum matches the target.</p>
+<p class="game-target">Target <strong id="bit-target">10</strong> · Your total <strong id="bit-total">0</strong></p>
+<div class="bit-buttons" role="group" aria-label="Binary switches">
+<button type="button" data-bit="8" aria-pressed="false" aria-label="Toggle bit worth 8"><b>0</b><small>8</small></button>
+<button type="button" data-bit="4" aria-pressed="false" aria-label="Toggle bit worth 4"><b>0</b><small>4</small></button>
+<button type="button" data-bit="2" aria-pressed="false" aria-label="Toggle bit worth 2"><b>0</b><small>2</small></button>
+<button type="button" data-bit="1" aria-pressed="false" aria-label="Toggle bit worth 1"><b>0</b><small>1</small></button>
+</div>
+<p id="bit-status" class="game-status" role="status">Choose a bit to begin.</p>
+<button class="button outline" id="new-bits" type="button">New target</button>
+</article>
+</div>
+</section>
+<section class="wrap section" id="skills" aria-labelledby="skills-title">
+<p class="eyebrow">03 / TECH SUPERPOWERS</p><h2 id="skills-title">The layers I work across.</h2>
+<div class="skills">
+<article><span>01</span><h3>Wireless &amp; RF</h3><p>Model propagation, evaluate coverage, and explore beamforming and programmable radio environments.</p><small>WinProp · CST · HFSS · MATLAB · OpenAirInterface</small></article>
+<article><span>02</span><h3>Embedded &amp; digital</h3><p>Prototype telemetry systems and study precision trade-offs in digital beamforming.</p><small>C/C++ · CAN · Raspberry Pi · Verilog · Yosys</small></article>
+<article><span>03</span><h3>Cloud &amp; applied ML</h3><p>Build APIs, dashboards, and ML pipelines that turn raw events into something people can use.</p><small>AWS · Python · FastAPI · React · PyTorch · scikit-learn</small></article>
+</div>
+</section>
+<section class="wrap section" id="projects" aria-labelledby="projects-title">
+<p class="eyebrow">04 / SELECTED WORK</p><h2 id="projects-title">Projects in the field and the lab.</h2>
+<div class="project-filters" id="project-filters" role="group" aria-label="Filter projects" hidden>
+<button type="button" class="button outline" data-filter="all" aria-pressed="true">All projects</button>
+<button type="button" class="button outline" data-filter="wireless" aria-pressed="false">Wireless</button>
+<button type="button" class="button outline" data-filter="embedded" aria-pressed="false">Embedded &amp; RTL</button>
+<button type="button" class="button outline" data-filter="cloud" aria-pressed="false">Cloud &amp; apps</button>
+<button type="button" class="button outline" data-filter="ai" aria-pressed="false">AI &amp; data</button>
+</div>
+<p id="project-count" class="project-count" role="status" hidden></p>
+<div class="projects">
+<article class="flip-card project-card" id="roadtrust" data-category="embedded">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M38 135h58l19-38 30 77 30-107 30 68h153"/><circle cx="40" cy="135" r="8"/><circle cx="357" cy="135" r="8"/><path d="M40 200h318M40 55h318" opacity=".32"/></g></svg><span>ILLUSTRATION / 01</span></div><div class="project-body"><p class="project-index">01 / EMBEDDED TELEMETRY</p><h3>RoadTrust</h3><p>Vehicle telemetry built around intermittent connectivity.</p><p class="result">Top 25 finalist project · COMET × Qualcomm Hackathon 2026</p>
+
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for RoadTrust" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">01 / EMBEDDED TELEMETRY</p><h3>RoadTrust</h3><p>I worked on a prototype that uses a CAN testbench to explore anomaly detection, outage buffering, and dashboard delivery.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for RoadTrust" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="campusnet" data-category="wireless">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(198 124)"><ellipse rx="148" ry="84"/><ellipse rx="115" ry="66"/><ellipse rx="82" ry="48"/><ellipse rx="47" ry="29"/><circle r="7"/><path d="M-160 0h320M0-100v200" opacity=".34"/></g></g></svg><span>ILLUSTRATION / 02</span></div><div class="project-body"><p class="project-index">02 / WIRELESS + ML</p><h3>Smart5G-CampusNet</h3><p>A 3.5 GHz coverage study for a university campus.</p><p class="result">R² ≈ 0.93 on simulation data</p>
+
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Smart5G-CampusNet" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">02 / WIRELESS + ML</p><h3>Smart5G-CampusNet</h3><p>I combined Altair WinProp propagation modeling with a Random Forest model to compare base-station configurations. In simulation, the share above 3 dB SNIR rose from 88.2% to 92.7%.</p><p>September–December 2025 · Guided by Dr. Sanjeev K. · Python, scikit-learn, and RF planning.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Smart5G-CampusNet" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="checkin" data-category="cloud">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M114 88V52h36m100 0h36v36m0 79v36h-36m-100 0h-36v-36"/><path d="M145 83h32v32h-32zm78 0h32v32h-32zm-78 76h32v32h-32zm61-25h18v18h-18zm28 28h22v27h-22z"/><path class="scan-line" d="M102 128h196"/></g></svg><span>ILLUSTRATION / 03</span></div><div class="project-body"><p class="project-index">03 / COMMUNITY TOOLS</p><h3>AWS Community Day QR platform</h3><p>A phone-first check-in tool for the Jammu event.</p><p class="result">Configurable checkpoints · Duplicate prevention</p>
+
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for AWS Community Day QR platform" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">03 / COMMUNITY TOOLS</p><h3>AWS Community Day QR platform</h3><p>I built a prototype with phone-camera QR scanning, a manual ID fallback, and CSV and Excel exports for event staff.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for AWS Community Day QR platform" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="beamformer" data-category="embedded wireless">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M200 188Q113 125 109 65q43 13 91 123Zm0 0Q185 120 215 48q42 38-15 140Zm0 0q58-91 112-100-15 61-112 100Z"/><path d="M65 188h270"/><circle cx="158" cy="188" r="5"/><circle cx="186" cy="188" r="5"/><circle cx="214" cy="188" r="5"/><circle cx="242" cy="188" r="5"/></g></svg><span>ILLUSTRATION / 04</span></div><div class="project-body"><p class="project-index">04 / RTL + SIGNAL PROCESSING</p><h3>Fixed-point beamformer</h3><p>A Verilog study of architecture and precision.</p><p class="result">16-bit experiment · −87.13 dB NMSE</p>
+
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Fixed-point beamformer" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">04 / RTL + SIGNAL PROCESSING</p><h3>Fixed-point beamformer</h3><p>I implemented serial, parallel, and dual-processing-element variants, then measured how fixed-point precision affected output error. <a href="#lab">Try the beamforming experiment ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Fixed-point beamformer" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="coldguard" data-category="embedded cloud">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M52 55v132h298M52 97h298M52 151h298" opacity=".45"/><path d="M52 146h42l17-12 33 10 40-4 23-48 24-12 26 42 43 18h50"/><circle cx="231" cy="80" r="6"/></g></svg><span>ILLUSTRATION / 05</span></div><div class="project-body"><p class="project-index">05 / EDGE + CLOUD</p><h3>SupplyMesh ColdGuard</h3><p>A cold-chain monitoring MVP for shipment telemetry and temperature alerts.</p><p class="result">FastAPI · WebSocket telemetry · Live route view</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for SupplyMesh ColdGuard" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">05 / EDGE + CLOUD</p><h3>SupplyMesh ColdGuard</h3><p>The prototype combines a route map, alerts, traceability records, and a digital twin to explore how operators could respond to cold-chain disruptions.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for SupplyMesh ColdGuard" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="scheduler" data-category="wireless">
+<div class="flip-front"><div class="project-art" aria-hidden="true"><svg viewBox="0 0 400 244"><g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M60 42v139h280"/><path d="M102 181v-79h36v79m28 0V79h36v102m28 0v-90h36v90m28 0V60h36v121"/><path d="M60 113h280" opacity=".35" stroke-dasharray="4 5"/></g></svg><span>ILLUSTRATION / 06</span></div><div class="project-body"><p class="project-index">06 / OPEN RAN</p><h3>OpenAirInterface QoS scheduler</h3><p>A scheduling experiment that compared throughput for two 5G QoS classes.</p><p class="result">22.37 Mbps for 5QI 7 · 18.95 Mbps for 5QI 9 in the experiment</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for OpenAirInterface QoS scheduler" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">06 / OPEN RAN</p><h3>OpenAirInterface QoS scheduler</h3><p>I explored a QoS-aware proportional-fair scheduling metric and compared mean throughput for the two classes in an OpenAirInterface test.</p><p><a href="https://github.com/MrigankJaiswal-hub/Intern_IIITCOMET">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for OpenAirInterface QoS scheduler" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="retina" data-category="ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / JAN–MAR 2026</span><strong>XAI</strong></div><div class="project-body"><p class="project-index">JAN–MAR 2026</p><h3>Retina-Aware Explanation Consistency</h3><p>Research prototype for diabetic retinopathy classification using EfficientNet and Grad-CAM.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Retina-Aware Explanation Consistency" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JAN–MAR 2026</p><h3>Retina-Aware Explanation Consistency</h3><p>Research prototype for diabetic retinopathy classification using EfficientNet and Grad-CAM. Developed an explanation consistency score and evaluated calibration, QWK, and classification metrics.</p><p><a href="https://github.com/MrigankJaiswal-hub/retina-aware-reliable-dr-classification">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Retina-Aware Explanation Consistency" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="awaaz" data-category="cloud ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / SEP–OCT 2025</span><strong>VOICE</strong></div><div class="project-body"><p class="project-index">SEP–OCT 2025</p><h3>AwaazPilot</h3><p>Real-time multilingual speech and dubbing with Murf streaming, React, Express, and WebSockets.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for AwaazPilot" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">SEP–OCT 2025</p><h3>AwaazPilot</h3><p>Real-time multilingual speech and dubbing with Murf streaming, React, Express, and WebSockets. Supports English and Hindi workflows.</p><p><a href="https://github.com/MrigankJaiswal-hub/awaazpilot">View repository ↗</a></p><p><a href="https://lambent-caramel-605436.netlify.app">Open live demo ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for AwaazPilot" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="insurance" data-category="cloud ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / AUG 2025</span><strong>RAG</strong></div><div class="project-body"><p class="project-index">AUG 2025</p><h3>Insurance Policy Query Retrieval</h3><p>Team Sherlock’d It project for Bajaj Finserv HackRx 5.0.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Insurance Policy Query Retrieval" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">AUG 2025</p><h3>Insurance Policy Query Retrieval</h3><p>Team Sherlock’d It project for Bajaj Finserv HackRx 5.0. Used React, FastAPI, SentenceTransformers, FAISS, and local inference to retrieve clauses from uploaded policy documents.</p><p><a href="https://github.com/MrigankJaiswal-hub/llm_query_retrieval">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Insurance Policy Query Retrieval" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="attendance" data-category="embedded ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / JAN–APR 2025</span><strong>EDGE AI</strong></div><div class="project-body"><p class="project-index">JAN–APR 2025</p><h3>Smart Attendance with Audio Feedback</h3><p>Raspberry Pi 4 prototype that recognizes faces, logs attendance to Excel, and gives audio feedback.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Smart Attendance with Audio Feedback" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JAN–APR 2025</p><h3>Smart Attendance with Audio Feedback</h3><p>Raspberry Pi 4 prototype that recognizes faces, logs attendance to Excel, and gives audio feedback. Built with Python and OpenCV.</p><p><a href="https://github.com/MrigankJaiswal-hub/Implementation-of-Smart-Attendance-System-with-Face-Recognition-and-Audio-Feedback">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Smart Attendance with Audio Feedback" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="assistive" data-category="embedded">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / SEP–DEC 2024</span><strong>SENSE</strong></div><div class="project-body"><p class="project-index">SEP–DEC 2024</p><h3>Assistive Object Detection</h3><p>Prototype using Raspberry Pi 3B, an HC-SR04 ultrasonic sensor, and text-to-speech to report obstacle proximity.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Assistive Object Detection" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">SEP–DEC 2024</p><h3>Assistive Object Detection</h3><p>Prototype using Raspberry Pi 3B, an HC-SR04 ultrasonic sensor, and text-to-speech to report obstacle proximity. Designed for a two-metre detection range.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Assistive Object Detection" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="hearing" data-category="embedded">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / APR–MAY 2024</span><strong>DSP</strong></div><div class="project-body"><p class="project-index">APR–MAY 2024</p><h3>Digital Hearing Aid Simulation</h3><p>Explored digital hearing-aid signal processing in MATLAB and Simulink.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Digital Hearing Aid Simulation" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">APR–MAY 2024</p><h3>Digital Hearing Aid Simulation</h3><p>Explored digital hearing-aid signal processing in MATLAB and Simulink.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Digital Hearing Aid Simulation" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="supply" data-category="embedded">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / FEB–MAR 2024</span><strong>5 VOLT</strong></div><div class="project-body"><p class="project-index">FEB–MAR 2024</p><h3>5 V Power Supply Circuit</h3><p>Built a regulated 5 V DC supply using a 7805 regulator as an electronics mini-project.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for 5 V Power Supply Circuit" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">FEB–MAR 2024</p><h3>5 V Power Supply Circuit</h3><p>Built a regulated 5 V DC supply using a 7805 regulator as an electronics mini-project.</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for 5 V Power Supply Circuit" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="rakshak" data-category="wireless ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / PUBLIC REPO</span><strong>O-RAN</strong></div><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>AeroCorridor Rakshak</h3><p>Explores cooperative 5G O-RAN, edge vision, and digital twins for wildlife–vehicle conflict scenarios.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for AeroCorridor Rakshak" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>AeroCorridor Rakshak</h3><p>Explores cooperative 5G O-RAN, edge vision, and digital twins for wildlife–vehicle conflict scenarios.</p><p><a href="https://github.com/MrigankJaiswal-hub/AeroCorridor-Rakshak">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for AeroCorridor Rakshak" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="etd" data-category="ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / PUBLIC REPO</span><strong>SEARCH</strong></div><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>ETD Semantic Retrieval Framework</h3><p>Semantic retrieval for electronic theses and dissertations using SentenceTransformers, FAISS, and grounded summaries.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for ETD Semantic Retrieval Framework" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>ETD Semantic Retrieval Framework</h3><p>Semantic retrieval for electronic theses and dissertations using SentenceTransformers, FAISS, and grounded summaries.</p><p><a href="https://github.com/MrigankJaiswal-hub/ETD-Semantic-Retrieval-Framework">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for ETD Semantic Retrieval Framework" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="pso" data-category="wireless ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / PUBLIC REPO</span><strong>RF + AI</strong></div><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>PSO-Assisted Hybrid Beamforming</h3><p>MATLAB study of optimization-guided hybrid beamforming for interference suppression.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for PSO-Assisted Hybrid Beamforming" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>PSO-Assisted Hybrid Beamforming</h3><p>MATLAB study of optimization-guided hybrid beamforming for interference suppression.</p><p><a href="https://github.com/MrigankJaiswal-hub/PSO-AI-Hybrid-Beamforming">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for PSO-Assisted Hybrid Beamforming" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="supplymeshx" data-category="cloud ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / PUBLIC REPO</span><strong>LOGISTICS</strong></div><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>SupplyMesh-X</h3><p>Supply-chain intelligence prototype exploring disruption detection and route recovery.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for SupplyMesh-X" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>SupplyMesh-X</h3><p>Supply-chain intelligence prototype exploring disruption detection and route recovery.</p><p><a href="https://github.com/MrigankJaiswal-hub/supplymesh-x-ai">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for SupplyMesh-X" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card project-card" id="finops" data-category="cloud ai">
+<div class="flip-front"><div class="project-art text-art" aria-hidden="true"><span>PROJECT / PUBLIC REPO</span><strong>FINOPS</strong></div><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>FinOps Agent</h3><p>AWS Bedrock, FastAPI, and React project for cloud cost analysis and optimization recommendations.</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for FinOps Agent" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">PUBLIC REPO</p><h3>FinOps Agent</h3><p>AWS Bedrock, FastAPI, and React project for cloud cost analysis and optimization recommendations.</p><p><a href="https://github.com/MrigankJaiswal-hub/finops-Agent">View repository ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for FinOps Agent" hidden>↶ Back to overview</button></div></div>
+</article>
+</div>
+<details class="archive"><summary>More public repositories <span>(21)</span></summary><ul class="link-grid"><li><a href="https://github.com/MrigankJaiswal-hub/RailGuardian-AI-OS">RailGuardian AI OS ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/brain-mri-simclr-yolov8">Brain MRI · SimCLR and YOLOv8 ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Intern_IIITCOMET">IIIT COMET Internship ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/invigilink-ai">InvigiLink AI ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/ml-vision-competition-tempelate">ML Vision Competition Template ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/AutoTrail-AI">AutoTrail AI ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/vqa-hardware-benchmark">VQA Hardware Benchmark ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/nisq-noise-fidelity-analysis">NISQ Noise Fidelity Analysis ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/rv32i-emulator-cpp">RV32I Emulator in C++ ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/SearchSphere-Agent">SearchSphere Agent ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Weather-App">Weather App ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Chatboat-using-NLTK-">NLTK Chatbot ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Rule-based-Chatboot">Rule-based Chatbot ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Mrigank-Jaiswal">Portfolio Archive ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/SMS-Spam-Detection">SMS Spam Detection ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Titanic-data-analysis">Titanic Data Analysis ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Credit-Card-Fraud-Detection">Credit Card Fraud Detection ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Movie-Recommendation-System">Movie Recommendation System ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Landing-Page-">Landing Page ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Calculator">Calculator ↗</a></li><li><a href="https://github.com/MrigankJaiswal-hub/Tic-Tac-Toe-Ai">Tic-Tac-Toe AI ↗</a></li></ul></details>
+</section>
+<section class="wrap section beam-section" id="lab" aria-labelledby="lab-title">
+<div class="beam-copy">
+<p class="eyebrow">05 / INTERACTIVE EXPERIMENT</p>
+<h2 id="lab-title">Steer a radio beam.</h2>
+<p>Move the slider to change the phase across four antennas. Watch their signals reinforce each other in a new direction.</p>
+<label for="steer">Steering angle <output id="angle" for="steer">0°</output></label>
+<input id="steer" type="range" min="-60" max="60" value="0" step="1">
+<div class="range-ends"><span>−60°</span><span>0°</span><span>+60°</span></div>
+<button type="button" id="reset" class="button outline">Reset angle</button>
+<p id="reveal" hidden>This is the idea behind my fixed-point beamformer. My Verilog work explored how much arithmetic precision it takes to preserve the signal.</p>
+<noscript><p>Enable JavaScript to move the beam.</p></noscript>
+</div>
+<figure class="beam-figure">
+<svg viewBox="0 0 400 244" role="img" aria-label="Normalized array factor for a four-element antenna array">
+<g fill="none" stroke="#60547b" stroke-width="1">
+<path d="M40 204a160 160 0 0 1 320 0M80 204a120 120 0 0 1 240 0M120 204a80 80 0 0 1 160 0M160 204a40 40 0 0 1 80 0"/>
+<path d="M40 204h320M200 204V44M200 204L87 91M200 204L313 91"/>
+</g>
+<path id="pattern" fill="#d9b9ff48" stroke="#efdfff" stroke-width="2"/>
+<line id="direction" x1="200" y1="204" x2="200" y2="44" stroke="#f6a17b" stroke-dasharray="5 5"/>
+<g fill="#d8c9eb" font-family="system-ui" font-size="12" text-anchor="middle"><text x="200" y="31">0°</text><text x="36" y="225">−90°</text><text x="364" y="225">+90°</text></g>
+</svg>
+<figcaption>Idealized 4-element linear array · Half-wavelength spacing · Normalized amplitude</figcaption>
+</figure>
+</section>
+<section class="wrap section" id="credentials" aria-labelledby="credentials-title">
+<p class="eyebrow">06 / CONTINUING LEARNING</p><h2 id="credentials-title">Licenses &amp; certifications.</h2>
+<section class="portfolio-group"><h3 class="group-heading">Featured credentials</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">DEC 2025</p><h3>Open Source RT-Thread RTOS on RISC-V (LFD123)</h3><p>The Linux Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Open Source RT-Thread RTOS on RISC-V (LFD123)" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">DEC 2025</p><h3>Open Source RT-Thread RTOS on RISC-V (LFD123)</h3><p>The Linux Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Open Source RT-Thread RTOS on RISC-V (LFD123)" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">DEC 2025</p><h3>Introduction to RISC-V (LFD110)</h3><p>The Linux Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Introduction to RISC-V (LFD110)" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">DEC 2025</p><h3>Introduction to RISC-V (LFD110)</h3><p>The Linux Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Introduction to RISC-V (LFD110)" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">DEC 2025</p><h3>VLSI Course</h3><p>Simplilearn</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for VLSI Course" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">DEC 2025</p><h3>VLSI Course</h3><p>Simplilearn</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for VLSI Course" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Quantum Computing</h3><p>C-DAC ACTS, Hyderabad</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Quantum Computing" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Quantum Computing</h3><p>C-DAC ACTS, Hyderabad</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Quantum Computing" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Microsoft Certified: Azure AI Fundamentals</h3><p>Microsoft</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Microsoft Certified: Azure AI Fundamentals" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Microsoft Certified: Azure AI Fundamentals</h3><p>Microsoft</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Microsoft Certified: Azure AI Fundamentals" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Signal Processing Onramp</h3><p>MathWorks</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Signal Processing Onramp" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Signal Processing Onramp</h3><p>MathWorks</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Signal Processing Onramp" hidden>↶ Back to overview</button></div></div>
+</article></div></section><details class="archive"><summary>More courses, workshops, and simulations <span>(20)</span></summary><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Experiencing End-to-End SAP Build</h3><p>SAP</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Experiencing End-to-End SAP Build" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Experiencing End-to-End SAP Build</h3><p>SAP</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Experiencing End-to-End SAP Build" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Python Essentials 2</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Python Essentials 2" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Python Essentials 2</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Python Essentials 2" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Python Essentials 1</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Python Essentials 1" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Python Essentials 1</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Python Essentials 1" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Introduction to Cybersecurity</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Introduction to Cybersecurity" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Introduction to Cybersecurity</h3><p>Cisco</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Introduction to Cybersecurity" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Introduction to Generative AI</h3><p>Google Cloud Skills Boost</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Introduction to Generative AI" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>Introduction to Generative AI</h3><p>Google Cloud Skills Boost</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Introduction to Generative AI" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">MAY 2025</p><h3>SQL Certification</h3><p>HackerRank</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for SQL Certification" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">MAY 2025</p><h3>SQL Certification</h3><p>HackerRank</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for SQL Certification" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">APR 2024</p><h3>IoT-Driven Smart Cities Workshop</h3><p>IIT Roorkee</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for IoT-Driven Smart Cities Workshop" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">APR 2024</p><h3>IoT-Driven Smart Cities Workshop</h3><p>IIT Roorkee</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for IoT-Driven Smart Cities Workshop" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Google Cloud Skills Boost</h3><p>Google Cloud Skills Boost</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Google Cloud Skills Boost" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Google Cloud Skills Boost</h3><p>Google Cloud Skills Boost</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Google Cloud Skills Boost" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">SEP 2024</p><h3>Introduction to Software Engineering</h3><p>IBM / Coursera</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Introduction to Software Engineering" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">SEP 2024</p><h3>Introduction to Software Engineering</h3><p>IBM / Coursera</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Introduction to Software Engineering" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">AUG 2024</p><h3>Unsupervised Learning, Recommenders, Reinforcement Learning</h3><p>Coursera</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Unsupervised Learning, Recommenders, Reinforcement Learning" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">AUG 2024</p><h3>Unsupervised Learning, Recommenders, Reinforcement Learning</h3><p>Coursera</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Unsupervised Learning, Recommenders, Reinforcement Learning" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">AUG 2024</p><h3>Introduction to Internet of Things</h3><p>Telecom Sector Skill Council</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Introduction to Internet of Things" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">AUG 2024</p><h3>Introduction to Internet of Things</h3><p>Telecom Sector Skill Council</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Introduction to Internet of Things" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUL 2024</p><h3>Overview of Space Exploration</h3><p>ISRO</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Overview of Space Exploration" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUL 2024</p><h3>Overview of Space Exploration</h3><p>ISRO</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Overview of Space Exploration" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>AI and Data Skills Internship Cum Certificate Program</h3><p>YBI Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for AI and Data Skills Internship Cum Certificate Program" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>AI and Data Skills Internship Cum Certificate Program</h3><p>YBI Foundation</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for AI and Data Skills Internship Cum Certificate Program" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Investment Banking Job Simulation</h3><p>JPMorgan Chase / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Investment Banking Job Simulation" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Investment Banking Job Simulation</h3><p>JPMorgan Chase / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Investment Banking Job Simulation" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Cyber Security Job Simulation</h3><p>Clifford Chance / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Cyber Security Job Simulation" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Cyber Security Job Simulation</h3><p>Clifford Chance / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Cyber Security Job Simulation" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Data Analytics and Visualization Job Simulation</h3><p>Accenture / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Data Analytics and Visualization Job Simulation" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Data Analytics and Visualization Job Simulation</h3><p>Accenture / Forage</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Data Analytics and Visualization Job Simulation" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">FEB 2024</p><h3>Frontend Developer CSS</h3><p>Great Learning</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Frontend Developer CSS" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">FEB 2024</p><h3>Frontend Developer CSS</h3><p>Great Learning</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Frontend Developer CSS" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Career Essentials in Generative AI</h3><p>Microsoft and LinkedIn</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Career Essentials in Generative AI" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">JUN 2024</p><h3>Career Essentials in Generative AI</h3><p>Microsoft and LinkedIn</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Career Essentials in Generative AI" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">COURSE</p><h3>Python Data Structure</h3><p>Great Learning</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Python Data Structure" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">COURSE</p><h3>Python Data Structure</h3><p>Great Learning</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Python Data Structure" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">APR 2024</p><h3>Certified MATLAB Professional</h3><p>MathWorks</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Certified MATLAB Professional" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">APR 2024</p><h3>Certified MATLAB Professional</h3><p>MathWorks</p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Certified MATLAB Professional" hidden>↶ Back to overview</button></div></div>
+</article></div></details></section>
+<section class="wrap section" id="writing" aria-labelledby="writing-title">
+<p class="eyebrow">07 / WRITING</p><h2 id="writing-title">Articles &amp; community notes.</h2>
+<section class="portfolio-group"><h3 class="group-heading">AWS Builder Center</h3><div class="card-grid"><article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">ARTICLE</p><h3>Who Controls Your AI Agent?</h3><p>AWS Builder Center</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Who Controls Your AI Agent?" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">ARTICLE</p><h3>Who Controls Your AI Agent?</h3><p>Explores how to think about control and security as AI agents gain the ability to act.</p><p><a href="https://builder.aws.com/content/3LMkHWrCG0qyyDewiV2JUTfZ9kT/who-controls-your-ai-agent-the-next-security-challenge">Read article ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Who Controls Your AI Agent?" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">ARTICLE</p><h3>Can AI Predict Cold-Chain Temperature Risks Before They Become Failures?</h3><p>AWS Builder Center</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for Can AI Predict Cold-Chain Temperature Risks Before They Become Failures?" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">ARTICLE</p><h3>Can AI Predict Cold-Chain Temperature Risks Before They Become Failures?</h3><p>Explores how telemetry and predictive models can help identify temperature excursions earlier.</p><p><a href="https://builder.aws.com/content/3LGTcP1yJ1e9yyzbz6lmT7f7J1s/can-ai-predict-cold-chain-temperature-risks-before-they-become-failures">Read article ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for Can AI Predict Cold-Chain Temperature Risks Before They Become Failures?" hidden>↶ Back to overview</button></div></div>
+</article>
+<article class="flip-card">
+<div class="flip-front"><div class="project-body"><p class="project-index">COMMUNITY COMMENT</p><h3>AWS Builder Center discussion</h3><p>AWS Builder Center</p>
+<button class="button outline flip-toggle" type="button" data-flip="back" aria-label="Show details for AWS Builder Center discussion" hidden>View details ↗</button></div></div>
+<div class="flip-back"><div class="project-body"><p class="project-index">COMMUNITY COMMENT</p><h3>AWS Builder Center discussion</h3><p>A contribution to a community discussion on AWS Builder Center.</p><p><a href="https://builder.aws.com/comment/3LGd18zyAVd2ObSCcC7QXwzzDDd">Open discussion comment ↗</a></p>
+<button class="button outline flip-toggle" type="button" data-flip="front" aria-label="Return to overview for AWS Builder Center discussion" hidden>↶ Back to overview</button></div></div>
+</article></div></section></section>
+<section class="wrap section contact" id="contact" aria-labelledby="contact-title">
+<p class="eyebrow">08 / CONTACT</p><h2 id="contact-title">Let’s compare notes.</h2>
+<p>Open to research conversations and collaborations in wireless, embedded systems, and edge AI.</p>
+<div class="actions"><a class="button primary" href="https://github.com/MrigankJaiswal-hub">GitHub ↗</a><a class="button outline" href="https://www.linkedin.com/in/mrigank-jaiswal/">LinkedIn ↗</a></div>
+</section>
+<section class="wrap night-drive" aria-labelledby="drive-title">
+<div class="drive-header">
+<div><p class="eyebrow">AFTER HOURS / TELEMETRY ROUTE</p><h2 id="drive-title">Night Drive.</h2></div>
+<button type="button" class="button outline" id="drive-toggle" hidden>Pause animation</button>
+</div>
+<svg id="drive-scene" viewBox="0 0 900 280" role="img" aria-labelledby="drive-image-title">
+<title id="drive-image-title">A car with glowing headlights follows a winding road through a night landscape.</title>
+<defs>
+<linearGradient id="drive-sky" x2="0" y2="1"><stop stop-color="#15132f"/><stop offset="1" stop-color="#3b2549"/></linearGradient>
+<linearGradient id="drive-headlights"><stop stop-color="#fff0b5" stop-opacity=".8"/><stop offset="1" stop-color="#ffdd86" stop-opacity="0"/></linearGradient>
+<radialGradient id="drive-beacon"><stop stop-color="#f5b8ff" stop-opacity=".75"/><stop offset="1" stop-color="#e38eff" stop-opacity="0"/></radialGradient>
+<path id="drive-route" d="M175 201 C95 201 96 116 187 112 C286 107 306 178 417 163 C535 147 574 63 697 72 C806 80 836 168 747 196 C636 232 547 183 451 205 C345 230 276 201 175 201 Z"/>
+</defs>
+<path fill="url(#drive-sky)" d="M0 0h900v280H0z"/>
+<circle cx="748" cy="38" r="19" fill="#ffe1ac" opacity=".88"/>
+<path d="M0 114l100-62 69 37 83-52 107 78 80-29 103 39 117-74 116 51 125-69v247H0z" fill="#28203d"/>
+<path d="M0 151l136-38 87 25 97-40 123 48 119-26 91 41 125-27 122 32v114H0z" fill="#1b1930"/>
+<g fill="#f4dfed" opacity=".8"><circle cx="50" cy="33" r="1.4"/><circle cx="185" cy="43" r="1.5"/><circle cx="333" cy="20" r="1.8"/><circle cx="426" cy="52" r="1.3"/><circle cx="548" cy="33" r="1.7"/><circle cx="822" cy="28" r="1.4"/></g>
+<g fill="none" stroke-linecap="round">
+<use href="#drive-route" stroke="#ba83d5" stroke-opacity=".2" stroke-width="37"/>
+<use href="#drive-route" stroke="#776382" stroke-width="25"/>
+<use href="#drive-route" stroke="#302c43" stroke-width="22"/>
+<use href="#drive-route" class="drive-lanes" stroke="#f8cc9e" stroke-width="2" stroke-dasharray="7 12"/>
+</g>
+<g class="drive-lights">
+<circle cx="109" cy="145" r="18" fill="url(#drive-beacon)"/><circle cx="109" cy="145" r="3" fill="#ffccf6"/>
+<circle cx="263" cy="121" r="18" fill="url(#drive-beacon)"/><circle cx="263" cy="121" r="3" fill="#ffccf6"/>
+<circle cx="490" cy="137" r="18" fill="url(#drive-beacon)"/><circle cx="490" cy="137" r="3" fill="#ffccf6"/>
+<circle cx="676" cy="57" r="18" fill="url(#drive-beacon)"/><circle cx="676" cy="57" r="3" fill="#ffccf6"/>
+<circle cx="789" cy="191" r="18" fill="url(#drive-beacon)"/><circle cx="789" cy="191" r="3" fill="#ffccf6"/>
+<circle cx="528" cy="210" r="18" fill="url(#drive-beacon)"/><circle cx="528" cy="210" r="3" fill="#ffccf6"/>
+</g>
+<g id="drive-car" transform="translate(175 201) rotate(180)">
+<path d="M12 -5L54 -17V17L12 5Z" fill="url(#drive-headlights)"/>
+<rect x="-14" y="-7" width="28" height="14" rx="4" fill="#f5ac8b"/>
+<rect x="-5" y="-5" width="10" height="10" rx="2" fill="#3b2849"/>
+<path d="M11 -4v2m0 4v2" stroke="#fff5c8" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M-12 -4v2m0 4v2" stroke="#fc516e" stroke-width="2" stroke-linecap="round"/>
+<animateMotion id="drive-motion" dur="17s" repeatCount="indefinite" rotate="auto" begin="indefinite"><mpath href="#drive-route"/></animateMotion>
+</g>
+</svg>
+</section>
+</main>
+<footer class="wrap footer"><span>© 2026 Mrigank Jaiswal</span><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
